@@ -1,0 +1,292 @@
+import { Product, User } from '../types/product';
+
+export const mockProducts: Product[] = [
+  {
+    id: '1',
+    title: 'Premium Wireless Headphones',
+    price: 89.99,
+    rating: 4.8,
+    seller: 'TechStore Pro',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e',
+    category: ['Men', 'Gadgets'],
+    description: 'High-quality wireless headphones with noise cancellation and premium sound quality.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 245
+  },
+  {
+    id: '2',
+    title: 'Elegant Diamond Necklace',
+    price: 299.99,
+    rating: 4.9,
+    seller: 'Luxury Gems',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338',
+    category: ['Women', 'Jewelry'],
+    description: 'Beautiful diamond necklace perfect for special occasions.',
+    isFavorited: true,
+    inStock: true,
+    reviews: 89
+  },
+  {
+    id: '3',
+    title: 'Stylish Men\'s Watch',
+    price: 159.99,
+    rating: 4.7,
+    seller: 'TimeKeeper',
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30',
+    category: ['Men', 'Jewelry'],
+    description: 'Classic men\'s watch with leather strap and premium movement.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 167
+  },
+  {
+    id: '4',
+    title: 'Women\'s Summer Dress',
+    price: 49.99,
+    rating: 4.6,
+    seller: 'Fashion Forward',
+    image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1',
+    category: ['Women', 'Clothing'],
+    description: 'Light and comfortable summer dress perfect for warm days.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 134
+  },
+  {
+    id: '5',
+    title: 'MacBook Pro 16"',
+    price: 2399.99,
+    rating: 4.9,
+    seller: 'Apple Store',
+    image: 'https://images.unsplash.com/photo-1541807084-5c52b6b3adef',
+    category: ['Men', 'Women', 'Gadgets'],
+    description: 'Professional laptop with M2 chip and stunning display.',
+    isFavorited: true,
+    inStock: true,
+    reviews: 412
+  },
+  {
+    id: '6',
+    title: 'Gift Box Set - Tea Collection',
+    price: 34.99,
+    rating: 4.5,
+    seller: 'Tea Masters',
+    image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574',
+    category: ['Gifts'],
+    description: 'Premium tea collection in a beautiful gift box.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 78
+  },
+  {
+    id: '7',
+    title: 'Men\'s Casual Shirt',
+    price: 29.99,
+    rating: 4.4,
+    seller: 'Casual Wear Co',
+    image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf',
+    category: ['Men', 'Clothing'],
+    description: 'Comfortable cotton shirt for everyday wear.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 95
+  },
+  {
+    id: '8',
+    title: 'Smart Fitness Tracker',
+    price: 79.99,
+    rating: 4.6,
+    seller: 'FitTech',
+    image: 'https://images.unsplash.com/photo-1434494878577-86c23bcb06b9',
+    category: ['Men', 'Women', 'Gadgets'],
+    description: 'Track your fitness goals with this advanced smart watch.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 203
+  },
+  {
+    id: '9',
+    title: 'Women\'s Handbag',
+    price: 89.99,
+    rating: 4.7,
+    seller: 'Style Bags',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62',
+    category: ['Women'],
+    description: 'Elegant leather handbag perfect for any occasion.',
+    isFavorited: true,
+    inStock: true,
+    reviews: 156
+  },
+  {
+    id: '10',
+    title: 'Bluetooth Speaker',
+    price: 59.99,
+    rating: 4.5,
+    seller: 'Audio Plus',
+    image: 'https://images.unsplash.com/photo-1589256469067-ea99122bbdc4',
+    category: ['Gadgets', 'Gifts'],
+    description: 'Portable Bluetooth speaker with amazing sound quality.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 89
+  },
+  {
+    id: '11',
+    title: 'Men\'s Sneakers',
+    price: 119.99,
+    rating: 4.8,
+    seller: 'Sport Shoes',
+    image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772',
+    category: ['Men', 'Clothing'],
+    description: 'Comfortable and stylish sneakers for active lifestyle.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 278
+  },
+  {
+    id: '12',
+    title: 'Gold Earrings',
+    price: 149.99,
+    rating: 4.9,
+    seller: 'Gold Rush',
+    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908',
+    category: ['Women', 'Jewelry'],
+    description: 'Beautiful 14k gold earrings with elegant design.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 67
+  },
+  {
+    id: '13',
+    title: 'Gaming Mouse',
+    price: 49.99,
+    rating: 4.6,
+    seller: 'Gaming Gear',
+    image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46',
+    category: ['Men', 'Gadgets'],
+    description: 'High-precision gaming mouse with RGB lighting.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 145
+  },
+  {
+    id: '14',
+    title: 'Women\'s Sunglasses',
+    price: 69.99,
+    rating: 4.4,
+    seller: 'Sun Style',
+    image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083',
+    category: ['Women'],
+    description: 'Trendy sunglasses with UV protection.',
+    isFavorited: true,
+    inStock: true,
+    reviews: 112
+  },
+  {
+    id: '15',
+    title: 'Scented Candle Gift Set',
+    price: 39.99,
+    rating: 4.7,
+    seller: 'Aroma Dreams',
+    image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8',
+    category: ['Gifts'],
+    description: 'Luxury scented candles in beautiful packaging.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 93
+  },
+  {
+    id: '16',
+    title: 'Men\'s Leather Jacket',
+    price: 199.99,
+    rating: 4.8,
+    seller: 'Leather Co',
+    image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5',
+    category: ['Men', 'Clothing'],
+    description: 'Premium leather jacket with classic design.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 189
+  },
+  {
+    id: '17',
+    title: 'Smartphone Stand',
+    price: 19.99,
+    rating: 4.3,
+    seller: 'Mobile Accessories',
+    image: 'https://images.unsplash.com/photo-1556656793-08538906a9f8',
+    category: ['Gadgets'],
+    description: 'Adjustable smartphone stand for desk use.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 67
+  },
+  {
+    id: '18',
+    title: 'Women\'s Yoga Set',
+    price: 79.99,
+    rating: 4.6,
+    seller: 'Active Wear',
+    image: 'https://images.unsplash.com/photo-1506629905687-64b2f2f43e90',
+    category: ['Women', 'Clothing'],
+    description: 'Comfortable yoga set for active women.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 134
+  },
+  {
+    id: '19',
+    title: 'Silver Bracelet',
+    price: 59.99,
+    rating: 4.5,
+    seller: 'Silver Style',
+    image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a',
+    category: ['Jewelry', 'Gifts'],
+    description: 'Elegant silver bracelet with modern design.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 87
+  },
+  {
+    id: '20',
+    title: 'Wireless Charger',
+    price: 29.99,
+    rating: 4.4,
+    seller: 'Charge Tech',
+    image: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07',
+    category: ['Gadgets'],
+    description: 'Fast wireless charger compatible with all devices.',
+    isFavorited: false,
+    inStock: true,
+    reviews: 156
+  }
+];
+
+export const mockUser: User = {
+  id: 'usr_12345',
+  username: 'fashionlover2024',
+  email: 'user@example.com',
+  profileImage: 'https://images.unsplash.com/photo-1494790108755-2616b612b775',
+  isSeller: false,
+  isAdmin: false
+};
+
+export const mockSellers: User[] = [
+  {
+    id: 'seller_001',
+    username: 'TechStore Pro',
+    email: 'tech@store.com',
+    profileImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e',
+    isSeller: true,
+    isAdmin: false
+  },
+  {
+    id: 'seller_002',
+    username: 'Fashion Forward',
+    email: 'fashion@forward.com',
+    profileImage: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80',
+    isSeller: true,
+    isAdmin: false
+  }
+];

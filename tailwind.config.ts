@@ -14,6 +14,10 @@ export default {
 			center: true,
 			padding: '2rem',
 			screens: {
+				'sm': '640px',
+				'md': '768px',
+				'lg': '1024px',
+				'xl': '1280px',
 				'2xl': '1400px'
 			}
 		},
@@ -61,7 +65,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Category Colors
+				men: 'hsl(var(--men-color))',
+				women: 'hsl(var(--women-color))',
+				gadgets: 'hsl(var(--gadgets-color))',
+				clothing: 'hsl(var(--clothing-color))',
+				jewelry: 'hsl(var(--jewelry-color))',
+				gifts: 'hsl(var(--gifts-color))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
